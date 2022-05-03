@@ -20,8 +20,6 @@ CHOSEN = [
     'MERLIN']
 
 if __name__ == '__main__':
-    test_player = PlayerData('***REMOVED***')
-    test_player.getUnitByName('MIKE WAZOWSKI')
 
     club_data = []
 
