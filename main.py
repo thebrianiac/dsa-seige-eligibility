@@ -6,8 +6,8 @@ import csv
 import datetime
 import time
 
-CLUB_ID = '***REMOVED***'
-API_KEY = '***REMOVED***'
+CLUB_ID = None
+API_KEY = None
 CHOSEN = [
     'OLAF',
     'THE HORNED KING',
@@ -20,6 +20,12 @@ CHOSEN = [
     'MERLIN']
 
 if __name__ == '__main__':
+
+    if (API_KEY is None):
+        API_KEY = input('Enter DSA.fan API key:')
+
+    if (CLUB_ID is None):
+        CLUB_ID = input('Enter Club ID:')
 
     club_data = []
 
